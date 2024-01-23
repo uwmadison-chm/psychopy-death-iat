@@ -73,236 +73,6 @@
     <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
   </Settings>
   <Routines>
-    <Routine name="instr_2">
-      <RoutineSettingsComponent name="instr_2" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="instr_2" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <TextboxComponent name="instr_2_text" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="alignment"/>
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="False" valType="bool" updates="constant" name="bold"/>
-        <Param val="None" valType="color" updates="constant" name="borderColor"/>
-        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="editable"/>
-        <Param val="None" valType="color" updates="constant" name="fillColor"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Consolas" valType="str" updates="constant" name="font"/>
-        <Param val="False" valType="bool" updates="constant" name="italic"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
-        <Param val="instr_2_text" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="visible" valType="str" updates="constant" name="overflow"/>
-        <Param val="0" valType="num" updates="constant" name="padding"/>
-        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1.5, 1.5)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="list" updates="constant" name="speechPoint"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.5" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$&quot;You will be asked to sort words into the categories of DEATH, LIFE, ME, and NOT ME.\n\nThe words in each category are shown below.\n\nDEATH: Suicide, Die, Dead, Lifeless, Deceased\n\nLIFE: Alive, Live, Thrive, Survive, Breathing\n\nME: Myself, My, Mine, I, Self\n\nNOT ME: Them, They, Theirs, Their, Other\n\nWhen the word in the center corresponds to one of the categories on the left, you will use the E key.\n\nWhen the word in the center corresponds to one of the categories on the right, you will use the I key.\n\nSort the words as quickly as possible while making as few mistakes as possible.\n\nPress Enter to start the task.&quot;" valType="str" updates="constant" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </TextboxComponent>
-      <KeyboardComponent name="instr_2_key_resp" plugin="None">
-        <Param val="'return'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="" valType="str" updates="constant" name="correctAns"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="instr_2_key_resp" valType="code" updates="None" name="name"/>
-        <Param val="press" valType="str" updates="constant" name="registerOn"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.5" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="last key" valType="str" updates="constant" name="store"/>
-        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
-    </Routine>
-    <Routine name="trial">
-      <RoutineSettingsComponent name="trial" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="trial" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-    </Routine>
-    <Routine name="block_intro">
-      <RoutineSettingsComponent name="block_intro" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="block_intro" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <TextboxComponent name="block_intro_text" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="alignment"/>
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="False" valType="bool" updates="constant" name="bold"/>
-        <Param val="None" valType="color" updates="constant" name="borderColor"/>
-        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="editable"/>
-        <Param val="None" valType="color" updates="constant" name="fillColor"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Consolas" valType="str" updates="constant" name="font"/>
-        <Param val="False" valType="bool" updates="constant" name="italic"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
-        <Param val="block_intro_text" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="visible" valType="str" updates="constant" name="overflow"/>
-        <Param val="0" valType="num" updates="constant" name="padding"/>
-        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1.5, 1.5)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="list" updates="constant" name="speechPoint"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.5" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$block_instructions" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </TextboxComponent>
-      <TextboxComponent name="cat_left_text" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="alignment"/>
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="False" valType="bool" updates="constant" name="bold"/>
-        <Param val="None" valType="color" updates="constant" name="borderColor"/>
-        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="editable"/>
-        <Param val="None" valType="color" updates="constant" name="fillColor"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Consolas" valType="str" updates="constant" name="font"/>
-        <Param val="False" valType="bool" updates="constant" name="italic"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
-        <Param val="cat_left_text" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="visible" valType="str" updates="constant" name="overflow"/>
-        <Param val="0" valType="num" updates="constant" name="padding"/>
-        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(-0.7, 0.4)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="list" updates="constant" name="speechPoint"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.5" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$cat_l_text" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </TextboxComponent>
-      <TextboxComponent name="cat_right_text" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="alignment"/>
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="False" valType="bool" updates="constant" name="bold"/>
-        <Param val="None" valType="color" updates="constant" name="borderColor"/>
-        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="editable"/>
-        <Param val="None" valType="color" updates="constant" name="fillColor"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Consolas" valType="str" updates="constant" name="font"/>
-        <Param val="False" valType="bool" updates="constant" name="italic"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
-        <Param val="cat_right_text" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="visible" valType="str" updates="constant" name="overflow"/>
-        <Param val="0" valType="num" updates="constant" name="padding"/>
-        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0.7, 0.4)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="list" updates="constant" name="speechPoint"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.5" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$cat_r_text" valType="str" updates="set every repeat" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </TextboxComponent>
-    </Routine>
     <Routine name="instr_1">
       <RoutineSettingsComponent name="instr_1" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
@@ -379,13 +149,629 @@
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="instr_2">
+      <RoutineSettingsComponent name="instr_2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="instr_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextboxComponent name="instr_2_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="instr_2_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.5, 1.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$&quot;You will be asked to sort words into the categories of DEATH, LIFE, ME, and NOT ME.\n\nThe words in each category are shown below.\n\nDEATH: Suicide, Die, Dead, Lifeless, Deceased\n\nLIFE: Alive, Live, Thrive, Survive, Breathing\n\nME: Myself, My, Mine, I, Self\n\nNOT ME: Them, They, Theirs, Their, Other\n\nWhen the word in the center corresponds to one of the categories on the left, you will use the E key.\n\nWhen the word in the center corresponds to one of the categories on the right, you will use the I key.\n\nSort the words as quickly as possible while making as few mistakes as possible.\n\nPress Enter to start the task.&quot;" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <KeyboardComponent name="instr_2_key_resp" plugin="None">
+        <Param val="'return'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="instr_2_key_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="block_intro">
+      <RoutineSettingsComponent name="block_intro" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="block_intro" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextboxComponent name="block_intro_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="block_intro_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.5, 1.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$block_instructions" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <TextboxComponent name="cat_left_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="cat_left_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(-0.7, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$cat_l_text" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <TextboxComponent name="cat_right_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="cat_right_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0.7, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$cat_r_text" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <KeyboardComponent name="block_intro_resp" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="block_intro_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="trial">
+      <CodeComponent name="code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;right_answer = (_pj.in_es6(trial_words[trials.thisN], left_cat_words) ? &quot;e&quot; : &quot;i&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="right_answer = 'e' if trial_words[trials.thisN] in left_cat_words else 'i'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="show_red_x = False&amp;#10;&amp;#10;if trial_resp.keys is not None and len(trial_resp.keys) &gt; 0:&amp;#10;    if trial_resp.keys[0] == right_answer:&amp;#10;        continueRoutine = False&amp;#10;    else:&amp;#10;        show_red_x = True&amp;#10;        &amp;#10;if show_red_x and right_answer in trial_resp.keys:&amp;#10;    continueRoutine = False" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;show_red_x = false;&amp;#10;if (((trial_resp.keys !== null) &amp;&amp; (trial_resp.keys.length &gt; 0))) {&amp;#10;    if ((trial_resp.keys[0] === right_answer)) {&amp;#10;        continueRoutine = false;&amp;#10;    } else {&amp;#10;        show_red_x = true;&amp;#10;    }&amp;#10;}&amp;#10;if ((show_red_x &amp;&amp; _pj.in_es6(right_answer, trial_resp.keys))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextboxComponent name="cat_left_key_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="cat_left_key_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(-0.7, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Press E for:" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <RoutineSettingsComponent name="trial" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextboxComponent name="cat_left_text_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="cat_left_text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(-0.7, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$cat_l_text" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <TextboxComponent name="cat_right_key_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="cat_right_key_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0.7, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Press I for:" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <TextboxComponent name="cat_right_text_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="cat_right_text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0.7, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$cat_r_text" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <KeyboardComponent name="trial_resp" plugin="None">
+        <Param val="'e','i'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$right_answer" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="trial_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="all keys" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <TextboxComponent name="trial_word" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="trial_word" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$trial_words[trials.thisN]" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <TextboxComponent name="red_x" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="red" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="red_x" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="condition" valType="str" updates="None" name="startType"/>
+        <Param val="$show_red_x" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="X" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+    </Routine>
+    <Routine name="generate_word_list">
+      <RoutineSettingsComponent name="generate_word_list" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="generate_word_list" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="generate_word_list_code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="import {shuffle} from 'random';&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;death_words = [&quot;DIE&quot;, &quot;DEAD&quot;, &quot;DECEASED&quot;, &quot;LIFELESS&quot;, &quot;SUICIDE&quot;];&amp;#10;life_words = [&quot;ALIVE&quot;, &quot;SURVIVE&quot;, &quot;LIVE&quot;, &quot;THRIVE&quot;, &quot;BREATHING&quot;];&amp;#10;me_words = [&quot;I&quot;, &quot;MYSELF&quot;, &quot;MY&quot;, &quot;MINE&quot;, &quot;SELF&quot;];&amp;#10;not_me_words = [&quot;THEY&quot;, &quot;THEM&quot;, &quot;THEIR&quot;, &quot;THEIRS&quot;, &quot;OTHER&quot;];&amp;#10;trial_words = [];&amp;#10;show_red_x = false;&amp;#10;if (_pj.in_es6(cat_l_key, [&quot;life&quot;, &quot;death&quot;])) {&amp;#10;    first_half = (life_words + death_words);&amp;#10;    util.shuffle(first_half);&amp;#10;    second_half = (life_words + death_words);&amp;#10;    util.shuffle(second_half);&amp;#10;    trial_words = (first_half + second_half);&amp;#10;} else {&amp;#10;    if (_pj.in_es6(cat_l_key, [&quot;me&quot;, &quot;notme&quot;])) {&amp;#10;        first_half = (me_words + not_me_words);&amp;#10;        util.shuffle(first_half);&amp;#10;        second_half = (me_words + not_me_words);&amp;#10;        util.shuffle(second_half);&amp;#10;        trial_words = (first_half + second_half);&amp;#10;    } else {&amp;#10;        if ((num_trials === 20)) {&amp;#10;            trial_words = (((life_words + death_words) + me_words) + not_me_words);&amp;#10;            util.shuffle(trial_words);&amp;#10;        } else {&amp;#10;            if ((num_trials === 40)) {&amp;#10;                first_half = (((life_words + death_words) + me_words) + not_me_words);&amp;#10;                util.shuffle(first_half);&amp;#10;                second_half = (((life_words + death_words) + me_words) + not_me_words);&amp;#10;                util.shuffle(second_half);&amp;#10;                trial_words = (first_half + second_half);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;key_to_words_map = {};&amp;#10;key_to_words_map[&quot;death&quot;] = death_words;&amp;#10;key_to_words_map[&quot;life&quot;] = life_words;&amp;#10;key_to_words_map[&quot;me&quot;] = me_words;&amp;#10;key_to_words_map[&quot;notme&quot;] = not_me_words;&amp;#10;left_cat_words = [];&amp;#10;for (var key, _pj_c = 0, _pj_a = cat_l_key.split(&quot;,&quot;), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    key = _pj_a[_pj_c];&amp;#10;    left_cat_words += key_to_words_map[key];&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="from random import shuffle&amp;#10;&amp;#10;death_words=[&quot;DIE&quot;,&quot;DEAD&quot;,&quot;DECEASED&quot;,&quot;LIFELESS&quot;,&quot;SUICIDE&quot;]&amp;#10;life_words=[&quot;ALIVE&quot;,&quot;SURVIVE&quot;,&quot;LIVE&quot;,&quot;THRIVE&quot;,&quot;BREATHING&quot;]&amp;#10;me_words=[&quot;I&quot;,&quot;MYSELF&quot;,&quot;MY&quot;,&quot;MINE&quot;,&quot;SELF&quot;]&amp;#10;not_me_words=[&quot;THEY&quot;,&quot;THEM&quot;,&quot;THEIR&quot;,&quot;THEIRS&quot;,&quot;OTHER&quot;]&amp;#10;&amp;#10;trial_words=[]&amp;#10;&amp;#10;show_red_x = False&amp;#10;&amp;#10;if cat_l_key in ['life', 'death']:&amp;#10;    first_half = life_words + death_words&amp;#10;    shuffle(first_half)&amp;#10;    second_half = life_words + death_words&amp;#10;    shuffle(second_half)&amp;#10;    trial_words = first_half + second_half&amp;#10;                &amp;#10;elif cat_l_key in ['me', 'notme']:&amp;#10;    first_half = me_words + not_me_words&amp;#10;    shuffle(first_half)&amp;#10;    second_half = me_words + not_me_words&amp;#10;    shuffle(second_half)&amp;#10;    trial_words = first_half + second_half&amp;#10;&amp;#10;elif num_trials == 20:&amp;#10;    trial_words = life_words + death_words + me_words + not_me_words&amp;#10;    shuffle(trial_words)&amp;#10;&amp;#10;elif num_trials == 40:&amp;#10;    first_half = life_words + death_words + me_words + not_me_words&amp;#10;    shuffle(first_half)&amp;#10;    second_half = life_words + death_words + me_words + not_me_words&amp;#10;    shuffle(second_half)&amp;#10;    trial_words = first_half + second_half&amp;#10;    &amp;#10;key_to_words_map = {}&amp;#10;key_to_words_map['death'] = death_words&amp;#10;key_to_words_map['life'] = life_words&amp;#10;key_to_words_map['me'] = me_words&amp;#10;key_to_words_map['notme'] = not_me_words&amp;#10;&amp;#10;left_cat_words = []&amp;#10;&amp;#10;for key in cat_l_key.split(','):&amp;#10;    left_cat_words += key_to_words_map[key]" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="generate_word_list_code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="outro">
+      <RoutineSettingsComponent name="outro" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="outro" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextboxComponent name="outro_text" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="outro_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Thank you for completing this task!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="instr_1"/>
     <Routine name="instr_2"/>
     <LoopInitiator loopType="TrialHandler" name="blocks">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('block', 1), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'life'), ('cat_r_key', 'death'), ('cat_l_text', 'LIFE'), ('cat_r_text', 'DEATH'), ('block_instructions', 'Put your index fingers on the E and I keys of your keyboard.\n\nWords representing the categories at the top will appear one-by-one in the middle of the screen. When the word belongs to a category on the left, press the E key; when the word belongs to a category on the right, press the I key. Words belong to only on category. If you make an error, a red X will appear.\n\nGO AS FAST YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 2), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'me'), ('cat_r_key', 'notme'), ('cat_l_text', 'ME'), ('cat_r_text', 'NOT ME'), ('block_instructions', None)]), OrderedDict([('block', 3), ('num_trials', 20), ('func', 'test'), ('cat_l_key', 'life,me'), ('cat_r_key', 'death,notme'), ('cat_l_text', 'LIFE\nor\nME'), ('cat_r_text', 'DEATH\nor\nNOT ME'), ('block_instructions', None)]), OrderedDict([('block', 4), ('num_trials', 40), ('func', 'test'), ('cat_l_key', 'life,me'), ('cat_r_key', 'death,notme'), ('cat_l_text', 'LIFE\nor\nME'), ('cat_r_text', 'DEATH\nor\nNOT ME'), ('block_instructions', None)]), OrderedDict([('block', 5), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'death'), ('cat_r_key', 'life'), ('cat_l_text', 'DEATH'), ('cat_r_text', 'LIFE'), ('block_instructions', None)]), OrderedDict([('block', 6), ('num_trials', 20), ('func', 'test'), ('cat_l_key', 'death,me'), ('cat_r_key', 'life,notme'), ('cat_l_text', 'DEATH\nor\nME'), ('cat_r_text', 'LIFE\nor\nNOT ME'), ('block_instructions', None)]), OrderedDict([('block', 7), ('num_trials', 40), ('func', 'test'), ('cat_l_key', 'death,me'), ('cat_r_key', 'life,notme'), ('cat_l_text', 'DEATH\nor\nME'), ('cat_r_text', 'LIFE\nor\nNOT ME'), ('block_instructions', None)])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('block', 1), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'life'), ('cat_r_key', 'death'), ('cat_l_text', 'LIFE'), ('cat_r_text', 'DEATH'), ('block_instructions', 'Put your index fingers on the E and I keys of your keyboard.\n\nWords representing the categories at the top will appear one-by-one in the middle of the screen. When the word belongs to a category on the left, press the E key; when the word belongs to a category on the right, press the I key. Words belong to only on category. If you make an error, a red X will appear.\n\nGO AS FAST YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 2), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'me'), ('cat_r_key', 'notme'), ('cat_l_text', 'ME'), ('cat_r_text', 'NOT ME'), ('block_instructions', 'See above: the categories have changed. The words for sorting have changed as well.The rules, however are the same.\n\nWhen the word belongs to a category on the left, press the E key; when the word belongs to a category on the right, press the I key. Words belong to only one category. If you make an error, a red X will appear. Press the other key to continue.\n\nGO AS FAST AS YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 3), ('num_trials', 20), ('func', 'test'), ('cat_l_key', 'life,me'), ('cat_r_key', 'death,notme'), ('cat_l_text', 'LIFE\nor\nME'), ('cat_r_text', 'DEATH\nor\nNOT ME'), ('block_instructions', 'See above. The four categories you saw separately now appear together. Remember, each word belongs to only one group. Use the E and I keys to categorize words into the four groups on the left and on the right.\n\nGO AS FAST AS YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 4), ('num_trials', 40), ('func', 'test'), ('cat_l_key', 'life,me'), ('cat_r_key', 'death,notme'), ('cat_l_text', 'LIFE\nor\nME'), ('cat_r_text', 'DEATH\nor\nNOT ME'), ('block_instructions', 'See above. The four categories now appear together in a new configuration. Remember, each word belongs to only one group. Use the E and I keys to categorize words into the four groups on the left and on the right.\n\nPress space bar when ready.')]), OrderedDict([('block', 5), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'death'), ('cat_r_key', 'life'), ('cat_l_text', 'DEATH'), ('cat_r_text', 'LIFE'), ('block_instructions', 'Notice above there are only two categories and they have switched positions. The category that was previously on the left is now on the right, and the category that was on the right is now on the left. Use the E and I keys to categorize words to the left and to the right. Press space bar when ready.')]), OrderedDict([('block', 6), ('num_trials', 20), ('func', 'test'), ('cat_l_key', 'death,me'), ('cat_r_key', 'life,notme'), ('cat_l_text', 'DEATH\nor\nME'), ('cat_r_text', 'LIFE\nor\nNOT ME'), ('block_instructions', 'See above. The four categories now appear together in a new configuration. Remember, each word belongs to only one group. Use the E and I keys to categorize words into the four groups on the left and on the right. Press space bar when ready.')]), OrderedDict([('block', 7), ('num_trials', 40), ('func', 'test'), ('cat_l_key', 'death,me'), ('cat_r_key', 'life,notme'), ('cat_l_text', 'DEATH\nor\nME'), ('cat_r_text', 'LIFE\nor\nNOT ME'), ('block_instructions', 'Sort the same four categories again. Use the E and I keys to categorize words into the four groups on the left and on the right. GO AS FAST AS YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="blocks1.csv" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
@@ -395,6 +781,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="block_intro"/>
+    <Routine name="generate_word_list"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -409,5 +796,6 @@
     <Routine name="trial"/>
     <LoopTerminator name="trials"/>
     <LoopTerminator name="blocks"/>
+    <Routine name="outro"/>
   </Flow>
 </PsychoPy2experiment>
