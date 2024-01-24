@@ -382,6 +382,21 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="trial">
+      <RoutineSettingsComponent name="trial" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
       <CodeComponent name="trial_code" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -439,21 +454,6 @@
         <Param val="Press E for:" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
-      <RoutineSettingsComponent name="trial" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="trial" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
       <TextboxComponent name="cat_left_text_2" plugin="None">
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
@@ -481,7 +481,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(-0.7, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.7, 0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -561,7 +561,7 @@
         <Param val="visible" valType="str" updates="constant" name="overflow"/>
         <Param val="0" valType="num" updates="constant" name="padding"/>
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
-        <Param val="(0.7, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.7, 0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
@@ -637,7 +637,7 @@
         <Param val="center" valType="str" updates="constant" name="alignment"/>
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="autoLog"/>
-        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
         <Param val="None" valType="color" updates="constant" name="borderColor"/>
         <Param val="2" valType="num" updates="constant" name="borderWidth"/>
         <Param val="red" valType="color" updates="constant" name="color"/>
@@ -649,7 +649,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -671,6 +671,46 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="X" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </TextboxComponent>
+      <TextboxComponent name="red_x_instr" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="alignment"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="autoLog"/>
+        <Param val="False" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="editable"/>
+        <Param val="None" valType="color" updates="constant" name="fillColor"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="Consolas" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="1.0" valType="num" updates="constant" name="lineSpacing"/>
+        <Param val="red_x_instr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="visible" valType="str" updates="constant" name="overflow"/>
+        <Param val="0" valType="num" updates="constant" name="padding"/>
+        <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
+        <Param val="(0, -0.3)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="list" updates="constant" name="speechPoint"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="If you press the wrong key, a red X will appear. Press the other key to continue." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </TextboxComponent>
     </Routine>
@@ -759,7 +799,7 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="Thank you for completing this task!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
@@ -772,7 +812,7 @@
     <LoopInitiator loopType="TrialHandler" name="blocks">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('block', 1), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'life'), ('cat_r_key', 'death'), ('cat_l_text', 'LIFE'), ('cat_r_text', 'DEATH'), ('block_instructions', 'Put your index fingers on the E and I keys of your keyboard.\n\nWords representing the categories at the top will appear one-by-one in the middle of the screen. When the word belongs to a category on the left, press the E key; when the word belongs to a category on the right, press the I key. Words belong to only on category. If you make an error, a red X will appear.\n\nGO AS FAST YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 2), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'me'), ('cat_r_key', 'notme'), ('cat_l_text', 'ME'), ('cat_r_text', 'NOT ME'), ('block_instructions', 'See above: the categories have changed. The words for sorting have changed as well.The rules, however are the same.\n\nWhen the word belongs to a category on the left, press the E key; when the word belongs to a category on the right, press the I key. Words belong to only one category. If you make an error, a red X will appear. Press the other key to continue.\n\nGO AS FAST AS YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 3), ('num_trials', 20), ('func', 'test'), ('cat_l_key', 'life,me'), ('cat_r_key', 'death,notme'), ('cat_l_text', 'LIFE\nor\nME'), ('cat_r_text', 'DEATH\nor\nNOT ME'), ('block_instructions', 'See above. The four categories you saw separately now appear together. Remember, each word belongs to only one group. Use the E and I keys to categorize words into the four groups on the left and on the right.\n\nGO AS FAST AS YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')]), OrderedDict([('block', 4), ('num_trials', 40), ('func', 'test'), ('cat_l_key', 'life,me'), ('cat_r_key', 'death,notme'), ('cat_l_text', 'LIFE\nor\nME'), ('cat_r_text', 'DEATH\nor\nNOT ME'), ('block_instructions', 'See above. The four categories now appear together in a new configuration. Remember, each word belongs to only one group. Use the E and I keys to categorize words into the four groups on the left and on the right.\n\nPress space bar when ready.')]), OrderedDict([('block', 5), ('num_trials', 20), ('func', 'practice'), ('cat_l_key', 'death'), ('cat_r_key', 'life'), ('cat_l_text', 'DEATH'), ('cat_r_text', 'LIFE'), ('block_instructions', 'Notice above there are only two categories and they have switched positions. The category that was previously on the left is now on the right, and the category that was on the right is now on the left. Use the E and I keys to categorize words to the left and to the right. Press space bar when ready.')]), OrderedDict([('block', 6), ('num_trials', 20), ('func', 'test'), ('cat_l_key', 'death,me'), ('cat_r_key', 'life,notme'), ('cat_l_text', 'DEATH\nor\nME'), ('cat_r_text', 'LIFE\nor\nNOT ME'), ('block_instructions', 'See above. The four categories now appear together in a new configuration. Remember, each word belongs to only one group. Use the E and I keys to categorize words into the four groups on the left and on the right. Press space bar when ready.')]), OrderedDict([('block', 7), ('num_trials', 40), ('func', 'test'), ('cat_l_key', 'death,me'), ('cat_r_key', 'life,notme'), ('cat_l_text', 'DEATH\nor\nME'), ('cat_r_text', 'LIFE\nor\nNOT ME'), ('block_instructions', 'Sort the same four categories again. Use the E and I keys to categorize words into the four groups on the left and on the right. GO AS FAST AS YOU CAN, WHILE MAKING AS FEW MISTAKES AS POSSIBLE.\n\nPress space bar when ready.')])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="blocks1.csv" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="$np.random.choice(('blocks1.csv','blocks2.csv','blocks3.csv','blocks4.csv'))" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="False" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
